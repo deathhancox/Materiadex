@@ -1,5 +1,8 @@
 {
   "item.materiadex.gold_facsimile": "Gold Facsimile",
 
-  "creativetab.materiadex_tab": "Materiadex"
+  "creativetab.materiadex_tab": "Materiadex",
+
+  "tooltip.materiadex.press_shift": "Hold §1SHIFT§r For More Information",
+  "tooltip.materiadex.more.facsimile": "A half clone of the represented item"
 }

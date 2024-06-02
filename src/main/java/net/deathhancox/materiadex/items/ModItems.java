@@ -1,6 +1,7 @@
 package net.deathhancox.materiadex.items;
 
 import net.deathhancox.materiadex.MateriadexMod;
+import net.deathhancox.materiadex.items.custom.FacsimileBase;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -12,7 +13,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, MateriadexMod.MOD_ID);
 
     public static final RegistryObject<Item> GOLD_FACSIMILE = ITEMS.register("gold_facsimile",
-            () -> new Item(new Item.Properties()));
+            () -> new FacsimileBase(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
