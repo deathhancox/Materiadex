@@ -4,7 +4,6 @@ import java.util.List;
 
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
-// import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -29,15 +28,10 @@ public class DescriptableItem extends Item {
 	
 	@Override
 	public void appendHoverText(ItemStack item_stack, Level level, List<Component> tooltip_component, TooltipFlag isAdvanced) {
-		// if (!REQUIRES_SHIFT) { tooltip_component.add(new TranslatableComponent(SHIFT_TRANSLATION_KEY)); return; }
 		if (!REQUIRES_SHIFT) { tooltip_component.add(Component.translatable(SHIFT_TRANSLATION_KEY)); return; }
 		
-		if (Screen.hasShiftDown()) {
-			// tooltip_component.add(new TranslatableComponent(SHIFT_TRANSLATION_KEY));
-			tooltip_component.add(Component.translatable(SHIFT_TRANSLATION_KEY));
-		} else {
-			// tooltip_component.add(new TranslatableComponent("tooltip.cadenmod.press_shift"));
-			tooltip_component.add(Component.translatable("tooltip.materiadex.press_shift"));
-		}
+		tooltip_component.add(Component.translatable(
+			Screen.hasShiftDown() ? SHIFT_TRANSLATION_KEY : "tooltip.materiadex.press_shift"
+		));
 	}
 }

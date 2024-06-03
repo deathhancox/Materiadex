@@ -13,6 +13,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, MateriadexMod.MOD_ID);
 
     public static final RegistryObject<Item> GOLD_FACSIMILE = ITEMS.register("gold_facsimile",
+    //               You can replace this with Item
             () -> new FacsimileBase(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

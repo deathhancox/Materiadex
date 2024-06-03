@@ -4,7 +4,11 @@ import net.deathhancox.materiadex.items.custom.descriptable.DescriptableItem;
 
 public class FacsimileBase extends DescriptableItem {
     public FacsimileBase(Properties properties) {
-        super(properties, "tooltip.materiadex.more.facsimile", true);
+        super(
+            properties.fireResistant(), 
+            "tooltip.materiadex.more.facsimile", 
+            true
+        );
     }
 
     public FacsimileBase(Properties properties, String shiftTextKey) {
