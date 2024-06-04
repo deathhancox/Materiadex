@@ -1,6 +1,7 @@
 {
 	"parent": "minecraft:block/cube_all",
 	"textures": {
-		"all": "materiadex:block/lizalite"
+		"all": "materiadex:block/lizalite",
+		"particle": "materiadex:block/lizalite"
 	}
 }

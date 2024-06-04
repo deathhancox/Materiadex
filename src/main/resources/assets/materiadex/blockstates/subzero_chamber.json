@@ -1,10 +1,7 @@
 {
     "variants": {
-        "" : {
+        "": {
             "model": "materiadex:block/subzero_chamber"
-        },
-        "active": {
-            "model": "materiadex:block/subzero_chamber_active"
         }
     }
 }
