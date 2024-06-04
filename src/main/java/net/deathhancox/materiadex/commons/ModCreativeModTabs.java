@@ -21,10 +21,12 @@ public class ModCreativeModTabs {
             .displayItems((pParameters, pOutput) -> {
                 pOutput.accept(ModItems.GOLD_FACSIMILE.get());
                 pOutput.accept(ModItems.ZERO_VECTOR_SHARD.get());
+                pOutput.accept(ModItems.SUPERPOSITION_INGOT.get());
                 pOutput.accept(ModItems.MATRIX_CORE.get());
 
                 pOutput.accept(ModBlocks.FACSIMILE_SUBSTANTIATER.get());
                 pOutput.accept(ModBlocks.SUBZERO_CHAMBER.get());
+                pOutput.accept(ModBlocks.LIZALITE.get());
             })
             .build());
             

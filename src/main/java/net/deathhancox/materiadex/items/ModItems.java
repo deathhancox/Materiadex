@@ -2,6 +2,7 @@ package net.deathhancox.materiadex.items;
 
 import net.deathhancox.materiadex.MateriadexMod;
 import net.deathhancox.materiadex.items.custom.FacsimileBase;
+import net.deathhancox.materiadex.items.custom.descriptable.DescriptableItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -20,6 +21,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> ZERO_VECTOR_SHARD = ITEMS.register("zero_vector_shard", 
         () -> new Item(new Item.Properties()));
+
+
+    public static final RegistryObject<Item> SUPERPOSITION_INGOT = ITEMS.register("superposition_ingot", 
+        () -> new DescriptableItem(new Item.Properties(), "tooltip.materiadex.more.superposition_ingot"));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

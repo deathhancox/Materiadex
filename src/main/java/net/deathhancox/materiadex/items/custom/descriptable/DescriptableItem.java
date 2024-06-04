@@ -15,7 +15,7 @@ public class DescriptableItem extends Item {
 	private final boolean REQUIRES_SHIFT;
 	
 	/**
-	 * Press shift for more details
+	 * Allows you to describe items
 	 * @param properties Item properties
 	 * @param textKey The translation key for when the user holds shift
 	 * @param requiresShift Determines if we need shift to show the content
@@ -24,6 +24,17 @@ public class DescriptableItem extends Item {
 		super(properties);
 		SHIFT_TRANSLATION_KEY = textKey;
 		REQUIRES_SHIFT = requiresShift;
+	}
+
+	/**
+	 * Press shift for more details
+	 * @param properties Item properties
+	 * @param textKey The translation key for when the user holds shift
+	 */
+	public DescriptableItem(Properties properties, String textKey) {
+		super(properties);
+		SHIFT_TRANSLATION_KEY = textKey;
+		REQUIRES_SHIFT = true;
 	}
 	
 	@Override

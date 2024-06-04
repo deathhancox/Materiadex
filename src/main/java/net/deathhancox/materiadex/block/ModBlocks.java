@@ -26,6 +26,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> SUBZERO_CHAMBER = registerBlock("subzero_chamber", 
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.GLASS)));
 
+    public static final RegistryObject<Block> LIZALITE = registerBlock("lizalite", 
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

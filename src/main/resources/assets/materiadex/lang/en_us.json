@@ -2,12 +2,15 @@
   "item.materiadex.gold_facsimile": "Gold Facsimile",
   "item.materiadex.zero_vector_shard": "Zero Vector Shard",
   "item.materiadex.matrix_core": "Matrix Core",
+  "item.materiadex.superposition_ingot": "Superposition Ingot",
 
   "block.materiadex.facsimile_substantiater": "Facsimile Substantiater",
   "block.materiadex.subzero_chamber": "Subzero Chamber",
+  "block.materiadex.lizalite": "Lizalite",
 
   "creativetab.materiadex_tab": "Materiadex",
 
   "tooltip.materiadex.press_shift": "Hold §1SHIFT§r For More Information",
-  "tooltip.materiadex.more.facsimile": "An incomplete version of the original item."
+  "tooltip.materiadex.more.facsimile": "An incomplete version of the original item.",
+  "tooltip.materiadex.more.superposition_ingot": "You can't seem to decide which ingot is here."
 }
