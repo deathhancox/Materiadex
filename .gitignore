@@ -21,7 +21,7 @@ build
 .gradle
 
 # other
-reference_material/*
+refrence_material
 eclipse
 run
 
