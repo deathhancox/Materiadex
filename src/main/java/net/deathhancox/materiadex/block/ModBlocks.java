@@ -20,7 +20,11 @@ public class ModBlocks {
         DeferredRegister.create(ForgeRegistries.BLOCKS, MateriadexMod.MOD_ID);
 
     public static final RegistryObject<Block> FACSIMILE_SUBSTANTIATER = registerBlock("facsimile_substantiater",
-     () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.GLASS)));
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.GLASS)));
+
+    
+    public static final RegistryObject<Block> SUBZERO_CHAMBER = registerBlock("subzero_chamber", 
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.GLASS)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

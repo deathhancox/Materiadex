@@ -1,10 +1,13 @@
 {
   "item.materiadex.gold_facsimile": "Gold Facsimile",
+  "item.materiadex.zero_vector_shard": "Zero Vector Shard",
+  "item.materiadex.matrix_core": "Matrix Core",
 
   "block.materiadex.facsimile_substantiater": "Facsimile Substantiater",
+  "block.materiadex.subzero_chamber": "Subzero Chamber",
 
   "creativetab.materiadex_tab": "Materiadex",
 
   "tooltip.materiadex.press_shift": "Hold §1SHIFT§r For More Information",
-  "tooltip.materiadex.more.facsimile": "A half clone of the represented item"
+  "tooltip.materiadex.more.facsimile": "An incomplete version of the original item."
 }

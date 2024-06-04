@@ -13,13 +13,14 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, MateriadexMod.MOD_ID);
 
     public static final RegistryObject<Item> GOLD_FACSIMILE = ITEMS.register("gold_facsimile",
-    //               You can replace this with Item
-            () -> new FacsimileBase(new Item.Properties()));
+        () -> new FacsimileBase(new Item.Properties()));
 
-    /**
-     * Register these items into the EventBus
-     * @param eventBus Forge's current EventBus
-     */
+    public static final RegistryObject<Item> MATRIX_CORE = ITEMS.register("matrix_core", 
+        () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> ZERO_VECTOR_SHARD = ITEMS.register("zero_vector_shard", 
+        () -> new Item(new Item.Properties()));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

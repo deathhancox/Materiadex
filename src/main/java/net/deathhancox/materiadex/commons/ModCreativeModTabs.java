@@ -20,8 +20,11 @@ public class ModCreativeModTabs {
             .title(Component.translatable("creativetab.materiadex_tab"))
             .displayItems((pParameters, pOutput) -> {
                 pOutput.accept(ModItems.GOLD_FACSIMILE.get());
-                
+                pOutput.accept(ModItems.ZERO_VECTOR_SHARD.get());
+                pOutput.accept(ModItems.MATRIX_CORE.get());
+
                 pOutput.accept(ModBlocks.FACSIMILE_SUBSTANTIATER.get());
+                pOutput.accept(ModBlocks.SUBZERO_CHAMBER.get());
             })
             .build());
             

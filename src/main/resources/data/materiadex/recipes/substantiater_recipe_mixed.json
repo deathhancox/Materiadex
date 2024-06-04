@@ -2,16 +2,13 @@
     "type": "minecraft:crafting_shaped",
     "category": "misc",
     "pattern":[
-        " # ",
-        "#F#",
-        " # "
+        "## ",
+        "## ",
+        "   "
     ],
     "key": {
         "#": {
             "item": "materiadex:gold_facsimile"
-        },
-        "F": {
-            "item": "minecraft:furnace"
         }
     },
     "result": {
