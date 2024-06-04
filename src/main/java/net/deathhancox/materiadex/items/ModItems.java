@@ -16,6 +16,10 @@ public class ModItems {
     //               You can replace this with Item
             () -> new FacsimileBase(new Item.Properties()));
 
+    /**
+     * Register these items into the EventBus
+     * @param eventBus Forge's current EventBus
+     */
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

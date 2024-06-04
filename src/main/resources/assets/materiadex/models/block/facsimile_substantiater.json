@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench by Dragon of Shuu",
 	"texture_size": [64, 64],
 	"textures": {
-		"1": "materiadex:block/facsimile_substantiater-conceptframe1"
+		"1": "materiadex:block/facsimile_substantiater"
 	},
 	"elements": [
 		{
