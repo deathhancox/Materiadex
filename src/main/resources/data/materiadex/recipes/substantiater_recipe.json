@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "materiadex:gold_facsimile",
+            "count": 4
+        }
+    ],
+    "result": {
+        "item": "materiadex:facsimile_substantiater"
+    }
+}
