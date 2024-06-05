@@ -1,10 +1,9 @@
 package net.deathhancox.materiadex.block;
 
-import com.google.common.base.Supplier;
+import java.util.function.Supplier;
 
 import net.deathhancox.materiadex.MateriadexMod;
 import net.deathhancox.materiadex.block.custom.FullRotationalBlock;
-import net.deathhancox.materiadex.block.custom.SubzeroChamberBlock;
 import net.deathhancox.materiadex.items.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;

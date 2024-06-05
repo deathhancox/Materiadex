@@ -15,14 +15,18 @@ public class ModItems {
     
     public static final RegistryObject<Item> MATRIX_CORE = ITEMS.register("matrix_core", 
         () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> ZERO_VECTOR_SHARD = ITEMS.register("zero_vector_shard", 
         () -> new Item(new Item.Properties()));
-        public static final RegistryObject<Item> MATRIX_MUNCHIES = ITEMS.register("matrix_munchies", 
+
+    public static final RegistryObject<Item> MATRIX_MUNCHIES = ITEMS.register("matrix_munchies", 
         () -> new Item(new Item.Properties().food(ModFoods.MATRIX_MUNCHIES)));
+
     public static final RegistryObject<Item> SUPERPOSITION_INGOT = ITEMS.register("superposition_ingot", 
         () -> new DescriptableItem(new Item.Properties(), "tooltip.materiadex.more.superposition_ingot"));
+
     public static final RegistryObject<Item> GOLD_FACSIMILE = ITEMS.register("gold_facsimile",
-    () -> new FacsimileBase(new Item.Properties()));
+        () -> new FacsimileBase(new Item.Properties()));
     
 
     public static void register(IEventBus eventBus) {

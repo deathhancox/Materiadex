@@ -36,22 +36,3 @@ public class SubzeroChamberBlock extends FurnaceBlock {
         }
     }
 }
-
-// @Nullable
-// public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level pLevel, BlockState pState, BlockEntityType<T> pBlockEntityType) {
-//    return createFurnaceTicker(pLevel, pBlockEntityType, BlockEntityType.FURNACE);
-// }
-
-// /**
-//  * Called to open this furnace's container.
-//  * 
-//  * @see #use
-//  */
-// protected void openContainer(Level pLevel, BlockPos pPos, Player pPlayer) {
-//    BlockEntity blockentity = pLevel.getBlockEntity(pPos);
-//    if (blockentity instanceof FurnaceBlockEntity) {
-//       pPlayer.openMenu((MenuProvider)blockentity);
-//       pPlayer.awardStat(Stats.INTERACT_WITH_FURNACE);
-//    }
-
-// }
