@@ -3,7 +3,7 @@ package net.deathhancox.materiadex.block;
 import java.util.function.Supplier;
 
 import net.deathhancox.materiadex.MateriadexMod;
-import net.deathhancox.materiadex.block.custom.FullRotationalBlock;
+import net.deathhancox.materiadex.block.custom.HorizontalRotationalBlock;
 import net.deathhancox.materiadex.items.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -20,7 +20,7 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = 
         DeferredRegister.create(ForgeRegistries.BLOCKS, MateriadexMod.MOD_ID);
     public static final RegistryObject<Block> FACSIMILE_SUBSTANTIATER = registerBlock("facsimile_substantiater",
-        () -> new FullRotationalBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.GLASS)));
+        () -> new HorizontalRotationalBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> SUBZERO_CHAMBER = registerBlock("subzero_chamber", 
         () -> new SubzeroChamberBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> LIZALITE = registerBlock("lizalite", 
