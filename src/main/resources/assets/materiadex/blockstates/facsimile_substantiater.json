@@ -1,7 +1,19 @@
 {
     "variants": {
-        "": {
+        "facing=north": {
             "model": "materiadex:block/facsimile_substantiater"
+        },
+        "facing=south": {
+            "model": "materiadex:block/facsimile_substantiater",
+            "y": 180
+        },
+        "facing=east": {
+            "model": "materiadex:block/facsimile_substantiater",
+            "y": 90
+        },
+        "facing=west": {
+            "model": "materiadex:block/facsimile_substantiater",
+            "y": 270
         }
     }
 }
