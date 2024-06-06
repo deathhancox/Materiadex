@@ -28,6 +28,7 @@ public class ModCreativeModTabs {
                 pOutput.accept(ModBlocks.FACSIMILE_SUBSTANTIATER.get());
                 pOutput.accept(ModBlocks.SUBZERO_CHAMBER.get());
                 pOutput.accept(ModBlocks.LIZALITE.get());
+                pOutput.accept(ModBlocks.SUPERPOSITION_STONE.get());
             })
             .build());
             

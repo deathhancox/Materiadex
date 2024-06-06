@@ -20,6 +20,7 @@ public class ModBlockStateProvider extends BlockStateProvider{
     @Override
     protected void registerStatesAndModels() {
         blockWithItem(ModBlocks.LIZALITE);
+        blockWithItem(ModBlocks.SUPERPOSITION_STONE);
         blockItem(ModBlocks.FACSIMILE_SUBSTANTIATER);
         blockItem(ModBlocks.SUBZERO_CHAMBER);
     }

@@ -18,6 +18,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.FACSIMILE_SUBSTANTIATER.get());
         this.dropSelf(ModBlocks.SUBZERO_CHAMBER.get());
         this.dropSelf(ModBlocks.LIZALITE.get());
+        this.dropSelf(ModBlocks.SUPERPOSITION_STONE.get());
     }
 
     @Override
