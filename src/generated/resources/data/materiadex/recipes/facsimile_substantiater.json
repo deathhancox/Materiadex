@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "materiadex:matrix_core"
+    },
+    "L": {
+      "item": "materiadex:lizalite"
+    },
+    "Z": {
+      "item": "materiadex:zero_vector_shard"
+    }
+  },
+  "pattern": [
+    "LZL",
+    "ZCZ",
+    "LZL"
+  ],
+  "result": {
+    "item": "materiadex:facsimile_substantiater"
+  },
+  "show_notification": true
+}
