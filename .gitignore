@@ -21,6 +21,7 @@ build
 .gradle
 
 # other
+backup
 reference_material
 eclipse
 run
