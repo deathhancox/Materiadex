@@ -16,8 +16,6 @@ public class ModBlockStateProvider extends BlockStateProvider{
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(ModBlocks.FACSIMILE_SUBSTANTIATER);
-        blockWithItem(ModBlocks.SUBZERO_CHAMBER);
         blockWithItem(ModBlocks.LIZALITE);
     }
 

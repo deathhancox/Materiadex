@@ -1,9 +1,7 @@
 package net.deathhancox.materiadex;
 
 import org.slf4j.Logger;
-
 import com.mojang.logging.LogUtils;
-
 import net.deathhancox.materiadex.block.ModBlocks;
 import net.deathhancox.materiadex.block.entity.ModBlockEntities;
 import net.deathhancox.materiadex.commons.ModCreativeModTabs;
@@ -50,8 +48,10 @@ public class MateriadexMod {
 
     }
 
-    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    // You can use EventBusSubscriber to automatically register all static methods in the class
+    // annotated with @SubscribeEvent
+    @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD,
+            value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
