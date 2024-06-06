@@ -25,8 +25,8 @@ public class ModBlocks {
         () -> new SubzeroChamberBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> LIZALITE = registerBlock("lizalite", 
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
-        public static final RegistryObject<Block> SUPERPOSITION_STONE = registerBlock("superposition_stone", 
-        () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> SUPERPOSITION_STONE = registerBlock("superposition_stone", 
+        () -> new SuperpositionStone(BlockBehaviour.Properties.copy(Blocks.CYAN_CONCRETE_POWDER)));
     
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
