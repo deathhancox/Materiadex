@@ -1,0 +1,38 @@
+{
+  "criteria": {
+    "": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "materiadex:lizalite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "materiadex:textures/block/lizalite.png",
+    "description": {
+      "translate": "advancements.main_story.collect_lizalite.description"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "materiadex:lizalite"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.main_story.collect_lizalite"
+    }
+  },
+  "requirements": [
+    [
+      ""
+    ]
+  ],
+  "sends_telemetry_event": true
+}

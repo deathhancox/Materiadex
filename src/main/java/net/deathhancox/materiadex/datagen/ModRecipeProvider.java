@@ -59,8 +59,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
                 .unlockedBy(getHasName(Items.NETHERITE_INGOT), has(Items.NETHERITE_INGOT))
                 .save(pWriter);
-
-
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer,
