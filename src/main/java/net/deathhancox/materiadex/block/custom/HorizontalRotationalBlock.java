@@ -26,6 +26,7 @@ public class HorizontalRotationalBlock extends Block {
         return pState.setValue(FACING, pRot.rotate(pState.getValue(FACING)));
     }
 
+    @SuppressWarnings("deprecation")
     public BlockState mirror(BlockState pState, Mirror pMirror) {
         return pState.rotate(pMirror.getRotation(pState.getValue(FACING)));
     }

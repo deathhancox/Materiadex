@@ -22,7 +22,7 @@ public class MateriadexMod {
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "materiadex";
     // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public MateriadexMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();

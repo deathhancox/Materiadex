@@ -1,9 +1,6 @@
 package net.deathhancox.materiadex.datagen;
 
-import org.openjdk.nashorn.internal.ir.Block;
-
 import net.deathhancox.materiadex.MateriadexMod;
-import net.deathhancox.materiadex.block.ModBlocks;
 import net.deathhancox.materiadex.items.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
