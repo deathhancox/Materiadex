@@ -1,12 +1,16 @@
 {
-  "parent": "materiadex:story/discover_superposition_stone",
   "criteria": {
     "": {
       "conditions": {
         "items": [
           {
             "items": [
-              "materiadex:lizalite"
+              "materiadex:superposition_stone"
+            ]
+          },
+          {
+            "items": [
+              "materiadex:superposition_ingot"
             ]
           }
         ]
@@ -16,17 +20,18 @@
   },
   "display": {
     "announce_to_chat": true,
+    "background": "materiadex:textures/block/lizalite.png",
     "description": {
-      "translate": "advancements.materiadex.main_story.collect_lizalite.desc"
+      "translate": "advancements.materiadex.main_story.collect_super_stone.desc"
     },
-    "frame": "challenge",
+    "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "materiadex:lizalite"
+      "item": "materiadex:superposition_stone"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancements.materiadex.main_story.collect_lizalite"
+      "translate": "advancements.materiadex.main_story.collect_super_stone"
     }
   },
   "requirements": [

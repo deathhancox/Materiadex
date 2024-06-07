@@ -1,0 +1,36 @@
+{
+  "parent": "materiadex:story/create_matrix_core",
+  "criteria": {
+    "eat": {
+      "conditions": {
+        "item": {
+          "items": [
+            "materiadex:matrix_munchies"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.materiadex.main_story.matrix_munchies.desc"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "materiadex:matrix_munchies"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.materiadex.main_story.matrix_munchies"
+    }
+  },
+  "requirements": [
+    [
+      "eat"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

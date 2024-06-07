@@ -16,7 +16,7 @@ public class SubzeroChamberEntity extends AbstractFurnaceBlockEntity {
 
     @Override
     public Component getDefaultName() {
-        return Component.translatable("container.subzero_chamber");
+        return Component.translatable("container.materiadex.subzero_chamber");
     }
 
     @Override

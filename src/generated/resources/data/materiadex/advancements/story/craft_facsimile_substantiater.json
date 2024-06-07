@@ -1,12 +1,12 @@
 {
-  "parent": "materiadex:story/discover_superposition_stone",
+  "parent": "materiadex:story/create_matrix_core",
   "criteria": {
-    "": {
+    "create": {
       "conditions": {
         "items": [
           {
             "items": [
-              "materiadex:lizalite"
+              "materiadex:facsimile_substantiater"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancements.materiadex.main_story.collect_lizalite.desc"
+      "translate": "advancements.materiadex.main_story.facsimile_substantiater.desc"
     },
     "frame": "challenge",
     "hidden": false,
     "icon": {
-      "item": "materiadex:lizalite"
+      "item": "materiadex:facsimile_substantiater"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancements.materiadex.main_story.collect_lizalite"
+      "translate": "advancements.materiadex.main_story.facsimile_substantiater"
     }
   },
   "requirements": [
     [
-      ""
+      "create"
     ]
   ],
   "sends_telemetry_event": true

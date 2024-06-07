@@ -1,12 +1,12 @@
 {
-  "parent": "materiadex:story/discover_superposition_stone",
+  "parent": "materiadex:story/discover_lizalite",
   "criteria": {
-    "": {
+    "create": {
       "conditions": {
         "items": [
           {
             "items": [
-              "materiadex:lizalite"
+              "materiadex:subzero_chamber"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancements.materiadex.main_story.collect_lizalite.desc"
+      "translate": "advancements.materiadex.main_story.make_subzero.desc"
     },
-    "frame": "challenge",
+    "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "materiadex:lizalite"
+      "item": "materiadex:subzero_chamber"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancements.materiadex.main_story.collect_lizalite"
+      "translate": "advancements.materiadex.main_story.make_subzero"
     }
   },
   "requirements": [
     [
-      ""
+      "create"
     ]
   ],
   "sends_telemetry_event": true

@@ -3,10 +3,12 @@ package net.deathhancox.materiadex.block;
 import java.util.function.Supplier;
 
 import net.deathhancox.materiadex.MateriadexMod;
+import net.deathhancox.materiadex.block.custom.DescriptableBlockItem;
 import net.deathhancox.materiadex.block.custom.HorizontalRotationalBlock;
 import net.deathhancox.materiadex.items.ModItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Item.Properties;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
@@ -24,9 +26,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> SUBZERO_CHAMBER = registerBlock("subzero_chamber", 
         () -> new SubzeroChamberBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> LIZALITE = registerBlock("lizalite", 
-        () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)));
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)), "tooltip.materiadex.more.lizalite");
     public static final RegistryObject<Block> SUPERPOSITION_STONE = registerBlock("superposition_stone", 
-        () -> new SuperpositionStone(BlockBehaviour.Properties.copy(Blocks.STONE)));
+        () -> new SuperpositionStone(BlockBehaviour.Properties.copy(Blocks.STONE)), "tooltip.materiadex.more.superposition_stone");
+    
+    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, String descKey) {
+        RegistryObject<T> toReturn = BLOCKS.register(name, block);
+        registerBlockItem(name, toReturn, descKey);
+        return toReturn;
+    }
     
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
@@ -36,6 +44,15 @@ public class ModBlocks {
     
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+    }
+    
+    @SuppressWarnings("unused")
+    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block, Properties properties) {
+        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), properties));
+    }
+
+    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block, String descKey) {
+        return ModItems.ITEMS.register(name, () -> new DescriptableBlockItem(block.get(), new Item.Properties(), descKey));
     }
     
     public static void register(IEventBus eventBus) {

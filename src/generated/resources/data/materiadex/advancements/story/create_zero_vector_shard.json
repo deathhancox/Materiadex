@@ -1,12 +1,12 @@
 {
-  "parent": "materiadex:story/discover_superposition_stone",
+  "parent": "materiadex:story/craft_subzero_chamber",
   "criteria": {
-    "": {
+    "create": {
       "conditions": {
         "items": [
           {
             "items": [
-              "materiadex:lizalite"
+              "materiadex:zero_vector_shard"
             ]
           }
         ]
@@ -17,21 +17,21 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancements.materiadex.main_story.collect_lizalite.desc"
+      "translate": "advancements.materiadex.main_story.zero_vector.desc"
     },
-    "frame": "challenge",
+    "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "materiadex:lizalite"
+      "item": "materiadex:zero_vector_shard"
     },
     "show_toast": true,
     "title": {
-      "translate": "advancements.materiadex.main_story.collect_lizalite"
+      "translate": "advancements.materiadex.main_story.zero_vector"
     }
   },
   "requirements": [
     [
-      ""
+      "create"
     ]
   ],
   "sends_telemetry_event": true

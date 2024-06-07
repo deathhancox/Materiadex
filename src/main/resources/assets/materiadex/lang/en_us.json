@@ -1,6 +1,18 @@
 {
-  "advancements.main_story.collect_lizalite": "Who's Liz?",
-  "advancements.main_story.collect_lizalite.description": "Pour water on Superposition Stone",
+  "advancements.materiadex.main_story.collect_super_stone": "What exactly am I looking at?",
+  "advancements.materiadex.main_story.collect_super_stone.desc": "Make the Superposition Ingot and Stone",
+  "advancements.materiadex.main_story.collect_lizalite": "Who's Liz?",
+  "advancements.materiadex.main_story.collect_lizalite.desc": "Pour water on Superposition Stone",
+  "advancements.materiadex.main_story.make_subzero": "What am I freezing?",
+  "advancements.materiadex.main_story.make_subzero.desc": "Make the Subzero chamber",
+  "advancements.materiadex.main_story.zero_vector": "What is zero vector?",
+  "advancements.materiadex.main_story.zero_vector.desc": "Freeze an amethyst shard in a Subzero Chamber",
+  "advancements.materiadex.main_story.matrix_core": "What's a matrix?",
+  "advancements.materiadex.main_story.matrix_core.desc": "Create a matrix core from a Subzero Chamber",
+  "advancements.materiadex.main_story.matrix_munchies": "THEY ARE EDIBLE?",
+  "advancements.materiadex.main_story.matrix_munchies.desc": "WHAT????",
+  "advancements.materiadex.main_story.facsimile_substantiater": "What is a fact smile?",
+  "advancements.materiadex.main_story.facsimile_substantiater.desc": "Craft the Facsimile Substantiater",
 
   "item.materiadex.gold_facsimile": "Gold Facsimile",
   "item.materiadex.zero_vector_shard": "Zero Vector Shard",
@@ -13,11 +25,13 @@
   "block.materiadex.lizalite": "Lizalite",
   "block.materiadex.superposition_stone": "Superposition Stone",
 
-  "container.subzero_chamber": "Subzero Chamber",
+  "container.materiadex.subzero_chamber": "Subzero Chamber",
 
   "creativetab.materiadex_tab": "Materiadex",
 
   "tooltip.materiadex.press_shift": "Hold §1SHIFT§r For More Information",
   "tooltip.materiadex.more.facsimile": "An incomplete version of the original item.",
-  "tooltip.materiadex.more.superposition_ingot": "You can't seem to decide which ingot is here."
+  "tooltip.materiadex.more.superposition_ingot": "You can't seem to decide which ingot is here.",
+  "tooltip.materiadex.more.superposition_stone": "Not even the stone is sure what's here.",
+  "tooltip.materiadex.more.lizalite": "The name seems oddly familiar..."
 }
