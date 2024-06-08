@@ -5,6 +5,7 @@ import com.mojang.logging.LogUtils;
 import net.deathhancox.materiadex.block.ModBlocks;
 import net.deathhancox.materiadex.block.entity.ModBlockEntities;
 import net.deathhancox.materiadex.commons.ModCreativeModTabs;
+import net.deathhancox.materiadex.gui.ModMenus;
 import net.deathhancox.materiadex.items.ModItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -32,6 +33,8 @@ public class MateriadexMod {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
+
+        ModMenus.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
