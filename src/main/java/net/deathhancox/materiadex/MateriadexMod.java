@@ -5,8 +5,10 @@ import com.mojang.logging.LogUtils;
 import net.deathhancox.materiadex.block.ModBlocks;
 import net.deathhancox.materiadex.block.entity.ModBlockEntities;
 import net.deathhancox.materiadex.commons.ModCreativeModTabs;
-import net.deathhancox.materiadex.gui.ModMenus;
 import net.deathhancox.materiadex.items.ModItems;
+import net.deathhancox.materiadex.screen.ModMenuTypes;
+import net.deathhancox.materiadex.screen.SubzeroChamberScreen;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -34,7 +36,7 @@ public class MateriadexMod {
         ModBlocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
 
-        ModMenus.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -58,6 +60,9 @@ public class MateriadexMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+
+            LOGGER.debug("HELLO, I HAVE REACHED JUST BEFORE WE CONNECT THE SCREEN AND MENU");
+            MenuScreens.register(ModMenuTypes.SUBZERO_CHAMBER_MENU.get(), SubzeroChamberScreen::new);
 
         }
     }
