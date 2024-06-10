@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "Layer0": "materiadex:item/lizalite_door"
+    "layer0": "materiadex:item/lizalite_door"
   }
 }

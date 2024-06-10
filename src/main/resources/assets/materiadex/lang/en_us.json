@@ -25,11 +25,11 @@
   "block.materiadex.superposition_stone": "Superposition Stone",
   "block.materiadex.lizalite": "Lizalite",
   "block.materiadex.polished_lizalite": "Polished Lizalite",
-  "block.materiadex.stairs": "Lizalite Stairs",
-  "block.materiadex.slab": "Lizalite Slab",
-  "block.materiadex.wall": "Lizalite Wall",
-  "block.materiadex.door": "Lizalite Door",
-  "block.materiadex.trapdoor": "Lizalite Trapdoor",
+  "block.materiadex.lizalite_stairs": "Lizalite Stairs",
+  "block.materiadex.lizalite_slab": "Lizalite Slab",
+  "block.materiadex.lizalite_wall": "Lizalite Wall",
+  "block.materiadex.lizalite_door": "Lizalite Door",
+  "block.materiadex.lizalite_trapdoor": "Lizalite Trapdoor",
 
   "container.materiadex.subzero_chamber": "Subzero Chamber",
 
