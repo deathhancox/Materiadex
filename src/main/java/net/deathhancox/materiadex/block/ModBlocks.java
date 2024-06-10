@@ -11,7 +11,9 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Item.Properties;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.ButtonBlock;
 import net.minecraft.world.level.block.DoorBlock;
+import net.minecraft.world.level.block.PressurePlateBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.StairBlock;
@@ -49,6 +51,12 @@ public class ModBlocks {
         () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion(), BlockSetType.OAK));
     public static final RegistryObject<Block> LIZALITE_TRAPDOOR = registerBlock("lizalite_trapdoor", 
         () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion(), BlockSetType.OAK));
+    public static final RegistryObject<Block> LIZALITE_PRESSURE_PLATE = registerBlock("lizalite_pressure_plate",
+        () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK),
+                BlockSetType.IRON));
+    public static final RegistryObject<Block> LIZALITE_BUTTON = registerBlock("lizalite_button",
+        () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON),
+                BlockSetType.IRON, 10, true));
 
 
     public static final RegistryObject<Block> SUPERPOSITION_STONE = registerBlock("superposition_stone", 

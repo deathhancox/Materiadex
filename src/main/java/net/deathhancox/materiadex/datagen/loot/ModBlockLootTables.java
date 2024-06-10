@@ -23,6 +23,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.LIZALITE_STAIRS.get());
         this.dropSelf(ModBlocks.LIZALITE_WALL.get());
         this.dropSelf(ModBlocks.LIZALITE_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.LIZALITE_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.LIZALITE_BUTTON.get());
         
         this.add(ModBlocks.LIZALITE_SLAB.get(), 
             block -> createSlabItemTable(ModBlocks.LIZALITE_SLAB.get()));

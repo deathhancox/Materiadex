@@ -31,6 +31,8 @@ public class ModItemModelProvider extends ItemModelProvider{
         evenSimplerBlockItem(ModBlocks.LIZALITE_STAIRS);
         evenSimplerBlockItem(ModBlocks.LIZALITE_SLAB);
         evenSimplerBlockItem(ModBlocks.POLISHED_LIZALITE_SLAB);
+        evenSimplerBlockItem(ModBlocks.LIZALITE_PRESSURE_PLATE);
+        buttonItem(ModBlocks.LIZALITE_BUTTON, ModBlocks.LIZALITE);
         trapdoorItem(ModBlocks.LIZALITE_TRAPDOOR);
         wallItem(ModBlocks.LIZALITE_WALL, ModBlocks.LIZALITE);
     }
@@ -45,6 +47,11 @@ public class ModItemModelProvider extends ItemModelProvider{
     public void wallItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
             .texture("wall", new ResourceLocation(MateriadexMod.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    public void buttonItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/button_inventory"))
+                .texture("texture",  new ResourceLocation(MateriadexMod.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
     }
 
     public void trapdoorItem(RegistryObject<Block> block) {

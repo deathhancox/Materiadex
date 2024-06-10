@@ -35,6 +35,8 @@ public class ModCreativeModTabs {
                 pOutput.accept(ModBlocks.LIZALITE_WALL.get());
                 pOutput.accept(ModBlocks.LIZALITE_DOOR.get());
                 pOutput.accept(ModBlocks.LIZALITE_TRAPDOOR.get());
+                pOutput.accept(ModBlocks.LIZALITE_PRESSURE_PLATE.get());
+                pOutput.accept(ModBlocks.LIZALITE_BUTTON.get());
                 pOutput.accept(ModBlocks.SUPERPOSITION_STONE.get());
             })
             .build());
