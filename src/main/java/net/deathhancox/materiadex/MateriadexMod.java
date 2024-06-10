@@ -7,7 +7,7 @@ import net.deathhancox.materiadex.block.entity.ModBlockEntities;
 import net.deathhancox.materiadex.commons.ModCreativeModTabs;
 import net.deathhancox.materiadex.items.ModItems;
 import net.deathhancox.materiadex.screen.ModMenuTypes;
-import net.deathhancox.materiadex.screen.SubzeroChamberScreen;
+import net.deathhancox.materiadex.screen.subzero_chamber.SubzeroChamberScreen;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;

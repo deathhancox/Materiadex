@@ -1,6 +1,7 @@
 package net.deathhancox.materiadex.screen;
 
 import net.deathhancox.materiadex.MateriadexMod;
+import net.deathhancox.materiadex.screen.subzero_chamber.SubzeroChamberMenu;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraftforge.common.extensions.IForgeMenuType;

@@ -1,7 +1,8 @@
-package net.deathhancox.materiadex.screen;
+package net.deathhancox.materiadex.screen.subzero_chamber;
 
 import net.deathhancox.materiadex.block.ModBlocks;
 import net.deathhancox.materiadex.block.entity.SubzeroChamberEntity;
+import net.deathhancox.materiadex.screen.ModMenuTypes;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -37,7 +38,7 @@ public class SubzeroChamberMenu extends AbstractContainerMenu {
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
             this.addSlot(new SlotItemHandler(iItemHandler, 0, 56, 26));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 116, 35));
+            this.addSlot(new SubzeroChamberResultSlot(iItemHandler, 1, 116, 35));
         });
 
         addDataSlots(data);

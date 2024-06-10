@@ -1,4 +1,4 @@
-package net.deathhancox.materiadex.screen;
+package net.deathhancox.materiadex.screen.subzero_chamber;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 

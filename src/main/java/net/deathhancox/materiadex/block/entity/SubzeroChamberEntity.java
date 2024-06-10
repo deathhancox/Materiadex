@@ -5,7 +5,7 @@ import org.jetbrains.annotations.Nullable;
 
 import net.deathhancox.materiadex.MateriadexMod;
 import net.deathhancox.materiadex.items.ModItems;
-import net.deathhancox.materiadex.screen.SubzeroChamberMenu;
+import net.deathhancox.materiadex.screen.subzero_chamber.SubzeroChamberMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
