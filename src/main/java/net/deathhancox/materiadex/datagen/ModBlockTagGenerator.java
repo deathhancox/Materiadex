@@ -44,7 +44,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider{
         
         this.tag(BlockTags.WALLS)
             .add(
-                ModBlocks.LIZALITE_WALL.get()
+                ModBlocks.LIZALITE_WALL.get(),
+                ModBlocks.POLISHED_LIZALITE_WALL.get()
         );
     }
     
