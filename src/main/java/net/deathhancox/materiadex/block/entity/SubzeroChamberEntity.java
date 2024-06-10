@@ -3,6 +3,7 @@ package net.deathhancox.materiadex.block.entity;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import net.deathhancox.materiadex.MateriadexMod;
 import net.deathhancox.materiadex.items.ModItems;
 import net.deathhancox.materiadex.screen.SubzeroChamberMenu;
 import net.minecraft.core.BlockPos;
@@ -145,17 +146,25 @@ public class SubzeroChamberEntity extends BlockEntity implements MenuProvider {
     private boolean hasRecipe() {
         boolean hasCraftingItem = this.itemHandler.getStackInSlot(INPUT_SLOT).getItem() == net.minecraft.world.item.Items.AMETHYST_SHARD;
     
-        ItemStack result = new ItemStack(net.minecraft.world.item.Items.AMETHYST_SHARD);
+        ItemStack result = new ItemStack(ModItems.ZERO_VECTOR_SHARD.get());
 
         return hasCraftingItem && canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
     }
 
     private boolean canInsertItemIntoOutputSlot(Item item) {
-        return this.itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty() || this.itemHandler.getStackInSlot(OUTPUT_SLOT).is(item);
+        boolean can = this.itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty() || this.itemHandler.getStackInSlot(OUTPUT_SLOT).is(item);
+
+        MateriadexMod.LOGGER.debug(can? "Item can be inserted into slot": "Item CANNOT be inserted into slot");
+
+        return can;
     }
 
     private boolean canInsertAmountIntoOutputSlot(int count) {
-        return this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + count <= this.itemHandler.getStackInSlot(OUTPUT_SLOT).getMaxStackSize();
+        boolean can = this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + count <= this.itemHandler.getStackInSlot(OUTPUT_SLOT).getMaxStackSize();
+
+        MateriadexMod.LOGGER.debug(can? "Amount can be inserted into slot" : "Amount CANNOT be inserted into slot");
+
+        return can;
     }
 
     private boolean hasProgressFinished() {

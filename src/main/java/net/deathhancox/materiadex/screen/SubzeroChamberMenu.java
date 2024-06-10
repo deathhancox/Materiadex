@@ -37,7 +37,7 @@ public class SubzeroChamberMenu extends AbstractContainerMenu {
 
         this.blockEntity.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(iItemHandler -> {
             this.addSlot(new SlotItemHandler(iItemHandler, 0, 56, 26));
-            this.addSlot(new SlotItemHandler(iItemHandler, 1, 112, 31));
+            this.addSlot(new SlotItemHandler(iItemHandler, 1, 116, 35));
         });
 
         addDataSlots(data);
