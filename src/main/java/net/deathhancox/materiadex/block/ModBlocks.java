@@ -44,9 +44,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> LIZALITE_WALL = registerBlock("lizalite_wall", 
         () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<Block> LIZALITE_DOOR = registerBlock("lizalite_door", 
-        () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noCollission(), BlockSetType.IRON));
-        public static final RegistryObject<Block> LIZALITE_TRAPDOOR = registerBlock("lizalite_trapdoor", 
-        () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noCollission(), BlockSetType.IRON));
+        () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion(), BlockSetType.OAK));
+    public static final RegistryObject<Block> LIZALITE_TRAPDOOR = registerBlock("lizalite_trapdoor", 
+        () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion(), BlockSetType.OAK));
 
 
     public static final RegistryObject<Block> SUPERPOSITION_STONE = registerBlock("superposition_stone", 
