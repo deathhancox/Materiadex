@@ -153,17 +153,11 @@ public class SubzeroChamberEntity extends BlockEntity implements MenuProvider {
 
     private boolean canInsertItemIntoOutputSlot(Item item) {
         boolean can = this.itemHandler.getStackInSlot(OUTPUT_SLOT).isEmpty() || this.itemHandler.getStackInSlot(OUTPUT_SLOT).is(item);
-
-        MateriadexMod.LOGGER.debug(can? "Item can be inserted into slot": "Item CANNOT be inserted into slot");
-
         return can;
     }
 
     private boolean canInsertAmountIntoOutputSlot(int count) {
         boolean can = this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + count <= this.itemHandler.getStackInSlot(OUTPUT_SLOT).getMaxStackSize();
-
-        MateriadexMod.LOGGER.debug(can? "Amount can be inserted into slot" : "Amount CANNOT be inserted into slot");
-
         return can;
     }
 
