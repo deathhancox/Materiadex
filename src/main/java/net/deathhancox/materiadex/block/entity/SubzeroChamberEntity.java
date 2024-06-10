@@ -3,7 +3,6 @@ package net.deathhancox.materiadex.block.entity;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import net.deathhancox.materiadex.MateriadexMod;
 import net.deathhancox.materiadex.items.ModItems;
 import net.deathhancox.materiadex.screen.subzero_chamber.SubzeroChamberMenu;
 import net.minecraft.core.BlockPos;

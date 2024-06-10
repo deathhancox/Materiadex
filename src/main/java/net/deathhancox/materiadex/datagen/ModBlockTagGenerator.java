@@ -41,6 +41,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider{
                 ModBlocks.SUBZERO_CHAMBER.get(),
                 ModBlocks.LIZALITE.get()
             );
+        
+        this.tag(BlockTags.WALLS)
+            .add(
+                ModBlocks.LIZALITE_WALL.get()
+        );
     }
     
 }

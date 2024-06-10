@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "materiadex:block/lizalite_slab"
+    },
+    "type=double": {
+      "model": "materiadex:block/lizalite"
+    },
+    "type=top": {
+      "model": "materiadex:block/lizalite_slab_top"
+    }
+  }
+}

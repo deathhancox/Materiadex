@@ -6,19 +6,16 @@ import net.deathhancox.materiadex.MateriadexMod;
 import net.deathhancox.materiadex.block.custom.DescriptableBlockItem;
 import net.deathhancox.materiadex.block.custom.HorizontalRotationalBlock;
 import net.deathhancox.materiadex.items.ModItems;
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Item.Properties;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DoorBlock;
-import net.minecraft.world.level.block.FenceBlock;
-import net.minecraft.world.level.block.FenceGateBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.StairBlock;
+import net.minecraft.world.level.block.TrapDoorBlock;
 import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
@@ -34,11 +31,12 @@ public class ModBlocks {
         () -> new HorizontalRotationalBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.GLASS)));
     public static final RegistryObject<Block> SUBZERO_CHAMBER = registerBlock("subzero_chamber", 
         () -> new SubzeroChamberBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.GLASS)));
-    public static final RegistryObject<Block> SUPERPOSITION_STONE = registerBlock("superposition_stone", 
-        () -> new SuperpositionStone(BlockBehaviour.Properties.copy(Blocks.STONE)), "tooltip.materiadex.more.superposition_stone");
+
+
     public static final RegistryObject<Block> LIZALITE = registerBlock("lizalite", 
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)), "tooltip.materiadex.more.lizalite");
-    
+        public static final RegistryObject<Block> POLISHED_LIZALITE = registerBlock("polished_lizalite", 
+        () -> new Block(BlockBehaviour.Properties.copy(Blocks.SMOOTH_STONE)));
     public static final RegistryObject<Block> LIZALITE_STAIRS = registerBlock("lizalite_stairs", 
         () -> new StairBlock(() -> ModBlocks.LIZALITE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<Block> LIZALITE_SLAB = registerBlock("lizalite_slab", 
@@ -46,8 +44,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> LIZALITE_WALL = registerBlock("lizalite_wall", 
         () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<Block> LIZALITE_DOOR = registerBlock("lizalite_door", 
-        () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.STONE), BlockSetType.IRON));
+        () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noCollission(), BlockSetType.IRON));
+        public static final RegistryObject<Block> LIZALITE_TRAPDOOR = registerBlock("lizalite_trapdoor", 
+        () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noCollission(), BlockSetType.IRON));
 
+
+    public static final RegistryObject<Block> SUPERPOSITION_STONE = registerBlock("superposition_stone", 
+        () -> new SuperpositionStone(BlockBehaviour.Properties.copy(Blocks.STONE)), "tooltip.materiadex.more.superposition_stone");
     
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, String descKey) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

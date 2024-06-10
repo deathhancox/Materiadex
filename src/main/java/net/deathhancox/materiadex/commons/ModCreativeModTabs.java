@@ -28,6 +28,12 @@ public class ModCreativeModTabs {
                 pOutput.accept(ModBlocks.FACSIMILE_SUBSTANTIATER.get());
                 pOutput.accept(ModBlocks.SUBZERO_CHAMBER.get());
                 pOutput.accept(ModBlocks.LIZALITE.get());
+                pOutput.accept(ModBlocks.POLISHED_LIZALITE.get());
+                pOutput.accept(ModBlocks.LIZALITE_STAIRS.get());
+                pOutput.accept(ModBlocks.LIZALITE_SLAB.get());
+                pOutput.accept(ModBlocks.LIZALITE_WALL.get());
+                pOutput.accept(ModBlocks.LIZALITE_DOOR.get());
+                pOutput.accept(ModBlocks.LIZALITE_TRAPDOOR.get());
                 pOutput.accept(ModBlocks.SUPERPOSITION_STONE.get());
             })
             .build());

@@ -22,8 +22,14 @@
 
   "block.materiadex.facsimile_substantiater": "Facsimile Substantiater",
   "block.materiadex.subzero_chamber": "Subzero Chamber",
-  "block.materiadex.lizalite": "Lizalite",
   "block.materiadex.superposition_stone": "Superposition Stone",
+  "block.materiadex.lizalite": "Lizalite",
+  "block.materiadex.polished_lizalite": "Polished Lizalite",
+  "block.materiadex.stairs": "Lizalite Stairs",
+  "block.materiadex.slab": "Lizalite Slab",
+  "block.materiadex.wall": "Lizalite Wall",
+  "block.materiadex.door": "Lizalite Door",
+  "block.materiadex.trapdoor": "Lizalite Trapdoor",
 
   "container.materiadex.subzero_chamber": "Subzero Chamber",
 
