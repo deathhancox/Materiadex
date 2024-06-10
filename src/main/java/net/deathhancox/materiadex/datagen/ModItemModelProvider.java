@@ -28,13 +28,19 @@ public class ModItemModelProvider extends ItemModelProvider{
         simpleItem(ModItems.MATRIX_MUNCHIES);
 
         simpleBlockItem(ModBlocks.LIZALITE_DOOR);
+        simpleBlockItem(ModBlocks.POLISHED_LIZALITE_DOOR);
         evenSimplerBlockItem(ModBlocks.LIZALITE_STAIRS);
+        evenSimplerBlockItem(ModBlocks.POLISHED_LIZALITE_STAIRS);
         evenSimplerBlockItem(ModBlocks.LIZALITE_SLAB);
         evenSimplerBlockItem(ModBlocks.POLISHED_LIZALITE_SLAB);
         evenSimplerBlockItem(ModBlocks.LIZALITE_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlocks.POLISHED_LIZALITE_PRESSURE_PLATE);
         buttonItem(ModBlocks.LIZALITE_BUTTON, ModBlocks.LIZALITE);
+        buttonItem(ModBlocks.POLISHED_LIZALITE_BUTTON, ModBlocks.POLISHED_LIZALITE);
         trapdoorItem(ModBlocks.LIZALITE_TRAPDOOR);
+        trapdoorItem(ModBlocks.POLISHED_LIZALITE_TRAPDOOR);
         wallItem(ModBlocks.LIZALITE_WALL, ModBlocks.LIZALITE);
+        wallItem(ModBlocks.POLISHED_LIZALITE_WALL, ModBlocks.POLISHED_LIZALITE);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

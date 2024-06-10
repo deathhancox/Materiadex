@@ -41,24 +41,36 @@ public class ModBlocks {
         () -> new Block(BlockBehaviour.Properties.copy(Blocks.SMOOTH_STONE)));
     public static final RegistryObject<Block> LIZALITE_STAIRS = registerBlock("lizalite_stairs", 
         () -> new StairBlock(() -> ModBlocks.LIZALITE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE)));
-    public static final RegistryObject<Block> LIZALITE_SLAB = registerBlock("lizalite_slab", 
+    public static final RegistryObject<Block> POLISHED_LIZALITE_STAIRS = registerBlock("polished_lizalite_stairs", 
+        () -> new StairBlock(() -> ModBlocks.LIZALITE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE)));
+        public static final RegistryObject<Block> LIZALITE_SLAB = registerBlock("lizalite_slab", 
         () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<Block> POLISHED_LIZALITE_SLAB = registerBlock("polished_lizalite_slab", 
         () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<Block> LIZALITE_WALL = registerBlock("lizalite_wall", 
         () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> POLISHED_LIZALITE_WALL = registerBlock("polished_lizalite_wall", 
+        () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<Block> LIZALITE_DOOR = registerBlock("lizalite_door", 
+        () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion(), BlockSetType.OAK));
+    public static final RegistryObject<Block> POLISHED_LIZALITE_DOOR = registerBlock("polished_lizalite_door", 
         () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion(), BlockSetType.OAK));
     public static final RegistryObject<Block> LIZALITE_TRAPDOOR = registerBlock("lizalite_trapdoor", 
         () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion(), BlockSetType.OAK));
+    public static final RegistryObject<Block> POLISHED_LIZALITE_TRAPDOOR = registerBlock("polished_lizalite_trapdoor", 
+        () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.STONE).noOcclusion(), BlockSetType.OAK));
     public static final RegistryObject<Block> LIZALITE_PRESSURE_PLATE = registerBlock("lizalite_pressure_plate",
+        () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK),
+                BlockSetType.IRON));
+    public static final RegistryObject<Block> POLISHED_LIZALITE_PRESSURE_PLATE = registerBlock("polished_lizalite_pressure_plate",
         () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK),
                 BlockSetType.IRON));
     public static final RegistryObject<Block> LIZALITE_BUTTON = registerBlock("lizalite_button",
         () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON),
                 BlockSetType.IRON, 10, true));
-
-
+    public static final RegistryObject<Block> POLISHED_LIZALITE_BUTTON = registerBlock("polished_lizalite_button",
+        () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON),
+                BlockSetType.IRON, 10, true));
     public static final RegistryObject<Block> SUPERPOSITION_STONE = registerBlock("superposition_stone", 
         () -> new SuperpositionStone(BlockBehaviour.Properties.copy(Blocks.STONE)), "tooltip.materiadex.more.superposition_stone");
     

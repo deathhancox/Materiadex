@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "materiadex:block/polished_lizalite_pressure_plate"
+    },
+    "powered=true": {
+      "model": "materiadex:block/polished_lizalite_pressure_plate_down"
+    }
+  }
+}
