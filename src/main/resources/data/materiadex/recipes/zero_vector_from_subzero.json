@@ -1,0 +1,12 @@
+{
+    "type": "materiadex:subzero_cooling",
+    "ingredients": [
+        {
+            "item": "minecraft:amethyst_shard"
+        }
+    ],
+    "output": {
+        "count": 2,
+        "item": "materiadex:zero_vector_shard"
+    }
+}

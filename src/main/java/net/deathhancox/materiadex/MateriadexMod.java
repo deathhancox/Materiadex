@@ -6,6 +6,7 @@ import net.deathhancox.materiadex.block.ModBlocks;
 import net.deathhancox.materiadex.block.entity.ModBlockEntities;
 import net.deathhancox.materiadex.commons.ModCreativeModTabs;
 import net.deathhancox.materiadex.items.ModItems;
+import net.deathhancox.materiadex.recipe.ModRecipes;
 import net.deathhancox.materiadex.screen.ModMenuTypes;
 import net.deathhancox.materiadex.screen.subzero_chamber.SubzeroChamberScreen;
 import net.minecraft.client.gui.screens.MenuScreens;
@@ -37,6 +38,8 @@ public class MateriadexMod {
         ModBlockEntities.register(modEventBus);
 
         ModMenuTypes.register(modEventBus);
+
+        ModRecipes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

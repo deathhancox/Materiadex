@@ -3,7 +3,9 @@ package net.deathhancox.materiadex.block.entity;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import net.deathhancox.materiadex.items.ModItems;
+import java.util.Optional;
+
+import net.deathhancox.materiadex.recipe.SubzeroChamberRecipe;
 import net.deathhancox.materiadex.screen.subzero_chamber.SubzeroChamberMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -134,7 +136,9 @@ public class SubzeroChamberEntity extends BlockEntity implements MenuProvider {
     }
 
     private void craftItem() {
-        ItemStack result = new ItemStack(ModItems.ZERO_VECTOR_SHARD.get(), 1);
+        Optional<SubzeroChamberRecipe> recipe = getCurrentRecipe();
+        ItemStack result = recipe.get().getResultItem(null);
+
         this.itemHandler.extractItem(INPUT_SLOT, 1, false);
 
         this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(
@@ -143,11 +147,23 @@ public class SubzeroChamberEntity extends BlockEntity implements MenuProvider {
     }
 
     private boolean hasRecipe() {
-        boolean hasCraftingItem = this.itemHandler.getStackInSlot(INPUT_SLOT).getItem() == net.minecraft.world.item.Items.AMETHYST_SHARD;
-    
-        ItemStack result = new ItemStack(ModItems.ZERO_VECTOR_SHARD.get());
+        Optional<SubzeroChamberRecipe> recipe = getCurrentRecipe();
 
-        return hasCraftingItem && canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
+        if (recipe.isEmpty()) return false;
+
+        ItemStack result = recipe.get().getResultItem(null);
+
+        return canInsertAmountIntoOutputSlot(result.getCount()) && canInsertItemIntoOutputSlot(result.getItem());
+    }
+
+    private Optional<SubzeroChamberRecipe> getCurrentRecipe() {
+        SimpleContainer inventory = new SimpleContainer(this.itemHandler.getSlots());
+
+        for (int i = 0; i < itemHandler.getSlots(); i++) {
+            inventory.setItem(i, this.itemHandler.getStackInSlot(i));
+        }
+
+        return this.level.getRecipeManager().getRecipeFor(SubzeroChamberRecipe.Type.INSTANCE, inventory, level);
     }
 
     private boolean canInsertItemIntoOutputSlot(Item item) {
