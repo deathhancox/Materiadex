@@ -32,6 +32,7 @@ public class ModBlockStateProvider extends BlockStateProvider{
 
         stairsBlock(((StairBlock) ModBlocks.LIZALITE_STAIRS.get()), blockTexture(ModBlocks.LIZALITE.get()));
         slabBlock(((SlabBlock) ModBlocks.LIZALITE_SLAB.get()), blockTexture(ModBlocks.LIZALITE.get()), blockTexture(ModBlocks.LIZALITE.get()));
+        slabBlock(((SlabBlock) ModBlocks.POLISHED_LIZALITE_SLAB.get()), blockTexture(ModBlocks.POLISHED_LIZALITE.get()), blockTexture(ModBlocks.POLISHED_LIZALITE.get()));
         wallBlock(((WallBlock) ModBlocks.LIZALITE_WALL.get()), blockTexture(ModBlocks.LIZALITE.get()));
 
         doorBlockWithRenderType((DoorBlock) ModBlocks.LIZALITE_DOOR.get(), modLoc("block/lizalite_door_bottom"), modLoc("block/lizalite_door_top"), "cutout");

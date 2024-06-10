@@ -41,6 +41,8 @@ public class ModBlocks {
         () -> new StairBlock(() -> ModBlocks.LIZALITE.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<Block> LIZALITE_SLAB = registerBlock("lizalite_slab", 
         () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
+    public static final RegistryObject<Block> POLISHED_LIZALITE_SLAB = registerBlock("polished_lizalite_slab", 
+        () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<Block> LIZALITE_WALL = registerBlock("lizalite_wall", 
         () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.STONE)));
     public static final RegistryObject<Block> LIZALITE_DOOR = registerBlock("lizalite_door", 

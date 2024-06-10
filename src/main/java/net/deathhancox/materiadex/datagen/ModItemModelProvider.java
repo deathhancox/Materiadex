@@ -30,6 +30,7 @@ public class ModItemModelProvider extends ItemModelProvider{
         simpleBlockItem(ModBlocks.LIZALITE_DOOR);
         evenSimplerBlockItem(ModBlocks.LIZALITE_STAIRS);
         evenSimplerBlockItem(ModBlocks.LIZALITE_SLAB);
+        evenSimplerBlockItem(ModBlocks.POLISHED_LIZALITE_SLAB);
         trapdoorItem(ModBlocks.LIZALITE_TRAPDOOR);
         wallItem(ModBlocks.LIZALITE_WALL, ModBlocks.LIZALITE);
     }

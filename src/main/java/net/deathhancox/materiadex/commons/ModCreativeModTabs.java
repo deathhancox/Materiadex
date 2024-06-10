@@ -31,6 +31,7 @@ public class ModCreativeModTabs {
                 pOutput.accept(ModBlocks.POLISHED_LIZALITE.get());
                 pOutput.accept(ModBlocks.LIZALITE_STAIRS.get());
                 pOutput.accept(ModBlocks.LIZALITE_SLAB.get());
+                pOutput.accept(ModBlocks.POLISHED_LIZALITE_SLAB.get());
                 pOutput.accept(ModBlocks.LIZALITE_WALL.get());
                 pOutput.accept(ModBlocks.LIZALITE_DOOR.get());
                 pOutput.accept(ModBlocks.LIZALITE_TRAPDOOR.get());
