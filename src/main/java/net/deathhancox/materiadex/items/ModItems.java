@@ -19,6 +19,9 @@ public class ModItems {
     public static final RegistryObject<Item> ZERO_VECTOR_SHARD = ITEMS.register("zero_vector_shard", 
         () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> ZERO_VECTOR_DUST = ITEMS.register("zero_vector_dust", 
+        () -> new Item(new Item.Properties().food(ModFoods.ZERO_VECTOR_DUST)));
+    
     public static final RegistryObject<Item> MATRIX_MUNCHIES = ITEMS.register("matrix_munchies", 
         () -> new Item(new Item.Properties().food(ModFoods.MATRIX_MUNCHIES)));
 

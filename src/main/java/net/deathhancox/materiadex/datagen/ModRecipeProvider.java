@@ -47,6 +47,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
                 .unlockedBy(getHasName(ModItems.MATRIX_CORE.get()), has(ModItems.MATRIX_CORE.get()))
                 .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ZERO_VECTOR_DUST.get())
+                .pattern("   ")
+                .pattern("SSS")
+                .define('S', ModItems.ZERO_VECTOR_SHARD.get())
+
+                .unlockedBy(getHasName(ModItems.MATRIX_CORE.get()), has(ModItems.MATRIX_CORE.get()))
+                .save(pWriter);
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SUPERPOSITION_INGOT.get())
                 .pattern(" N ")
                 .pattern("G I")

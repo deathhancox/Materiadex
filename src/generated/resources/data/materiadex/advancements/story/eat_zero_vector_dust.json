@@ -1,0 +1,36 @@
+{
+  "parent": "materiadex:story/create_zero_vector_shard",
+  "criteria": {
+    "eat": {
+      "conditions": {
+        "item": {
+          "items": [
+            "materiadex:zero_vector_dust"
+          ]
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancements.materiadex.main_story.zero_vector_dust.desc"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "materiadex:zero_vector_dust"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancements.materiadex.main_story.zero_vector_dust"
+    }
+  },
+  "requirements": [
+    [
+      "eat"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

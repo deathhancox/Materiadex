@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "materiadex:zero_vector_shard"
+    }
+  },
+  "pattern": [
+    "   ",
+    "SSS"
+  ],
+  "result": {
+    "item": "materiadex:zero_vector_dust"
+  },
+  "show_notification": true
+}

@@ -24,6 +24,7 @@ public class ModCreativeModTabs {
                 pOutput.accept(ModItems.SUPERPOSITION_INGOT.get());
                 pOutput.accept(ModItems.MATRIX_CORE.get());
                 pOutput.accept(ModItems.MATRIX_MUNCHIES.get());
+                pOutput.accept(ModItems.ZERO_VECTOR_DUST.get());
 
                 pOutput.accept(ModBlocks.FACSIMILE_SUBSTANTIATER.get());
                 pOutput.accept(ModBlocks.SUBZERO_CHAMBER.get());

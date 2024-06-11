@@ -25,6 +25,7 @@ public class ModItemModelProvider extends ItemModelProvider{
         simpleItem(ModItems.MATRIX_CORE);
         simpleItem(ModItems.SUPERPOSITION_INGOT);
         simpleItem(ModItems.ZERO_VECTOR_SHARD);
+        simpleItem(ModItems.ZERO_VECTOR_DUST);
         simpleItem(ModItems.MATRIX_MUNCHIES);
 
         simpleBlockItem(ModBlocks.LIZALITE_DOOR);

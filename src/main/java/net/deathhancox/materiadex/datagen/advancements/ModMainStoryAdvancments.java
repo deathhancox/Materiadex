@@ -93,6 +93,19 @@ public class ModMainStoryAdvancments implements AdvancementGenerator {
             .save(saver, advanceSaveLoc("eat_matrix_munchies"), existingFileHelper);
 
         @SuppressWarnings("unused")
+        Advancement zeroVectorDustAdvancement = Advancement.Builder.advancement()
+            .display(
+                new DisplayTypes.DisplayGoal(
+                    ModItems.ZERO_VECTOR_DUST.get(),
+                    "advancements.materiadex.main_story.zero_vector_dust", 
+                    "advancements.materiadex.main_story.zero_vector_dust.desc"
+                )
+            )
+            .parent(zeroVectorShardAdvancement)
+            .addCriterion("eat", ConsumeItemTrigger.TriggerInstance.usedItem(ModItems.ZERO_VECTOR_DUST.get()))
+            .save(saver, advanceSaveLoc("eat_zero_vector_dust"), existingFileHelper);
+
+        @SuppressWarnings("unused")
         Advancement facsimileSubstantiaterAdvancement = Advancement.Builder.advancement()
             .display(
                 new DisplayTypes.DisplayChallenge(
