@@ -11,6 +11,7 @@ public class ModFoods {
         .alwaysEat()
         .saturationMod(0.2f)
         .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 1), 0.5f)
+        .effect(() -> new MobEffectInstance(MobEffects.CONFUSION, 200, 0), 1)
         .build();
     public static final FoodProperties MATRIX_MUNCHIES = new FoodProperties.Builder()
         .nutrition(2)
